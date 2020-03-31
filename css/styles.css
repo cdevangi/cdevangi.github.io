@@ -176,7 +176,7 @@ a:hover {}
 }
 
 .logo {
-    width: 40%;
+    width: 45%;
     height: auto;
 }
 
@@ -238,8 +238,25 @@ color: #5f5f5f;
 }
 .footer-icon {
   margin: 1.5%;
-  color: #111111;
+  /*color: #111111;*/
+  color: #fafafa;
   font-size: 22px;
+}
+
+.mobile {
+  display: none;
+}
+
+.footer-line {
+  margin-bottom: 0
+}
+
+.location {
+  font-size: 16px;
+}
+
+.location .footer-icon {
+  font-size: 16px;
 }
 
 @media (max-width: 767px) {
@@ -262,6 +279,10 @@ color: #5f5f5f;
   .about-me {
     margin-top: 55px;
     margin-bottom: 60px;
+  }
+
+  .mobile {
+    display: initial;
   }
 
 }
