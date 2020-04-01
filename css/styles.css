@@ -62,7 +62,7 @@ h4 {
 
 .navbar {
   padding: 1 5em;
-  padding: 10px 11% 5px;
+  padding: 0 11% 0;
   position: fixed;
   background: #fafafa;
   color: #1a1818;
@@ -145,10 +145,10 @@ a:hover {}
 
 /* About section */
 .about-me {
-  padding: 5% 11% 0;
+  padding: 5% 11% 5%;
   /*background: black;
   color: white;*/
-  text-align: left;
+  text-align: justify;
 }
 
 .about-me .underline {
@@ -163,7 +163,7 @@ a:hover {}
 
 /* Experience */
 #experience {
-    padding: 5% 11% 0;
+    padding: 5% 11% 5%;
     text-align: left;
 }
 
@@ -183,7 +183,7 @@ a:hover {}
 .desc-role {
   margin-bottom: 0;
   margin-top: 15px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1rem;
 }
 
@@ -191,6 +191,10 @@ a:hover {}
 font-size: 0.95rem;
 color: #5f5f5f;
 
+}
+
+.dark-theme .desc-firm {
+  color: #b5b3b3;
 }
 
 .desc-txt {
@@ -202,9 +206,26 @@ color: #5f5f5f;
   background-color: #cc5959;
 }
 
+#current-education {
+    padding: 5% 11% 5%;
+    text-align: left;
+}
+
+#current-education .underline {
+  width: 235px;
+}
+
+#current-education .row {
+  margin-top: 50px;
+}
+
+#current-education .logo {
+  width: 38%;
+}
+
 /* Education */
 #education {
-    padding: 5% 11% 0;
+    padding: 5% 11% 5%;
     text-align: left;
 }
 
@@ -217,7 +238,6 @@ color: #5f5f5f;
 }
 
 #education .logo {
-  width: 55%;
 }
 /* Projects */
 #projects {
@@ -261,6 +281,9 @@ color: #5f5f5f;
 
 @media (max-width: 767px) {
 
+  html, body {
+    font-size: 0.7rem;
+  }
   #title {
     height: 70vh;
   }
@@ -273,7 +296,10 @@ color: #5f5f5f;
   }
 
   #education .logo {
-    width: 30%;
+    width: 25%;
+  }
+  #current-education .logo {
+    width: 18%;
   }
 
   .row {
@@ -281,12 +307,52 @@ color: #5f5f5f;
   }
 
   .about-me {
-    margin-top: 55px;
+    margin-top: 25px;
     margin-bottom: 60px;
   }
 
-  .mobile {
-    display: initial;
+  .desc-role {
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 0.85rem;
   }
+
+  .desc-firm {
+  font-size: 0.8rem;
+  color: #5f5f5f;
+
+  }
+
+  .desc-txt {
+    vertical-align: middle;
+    font-weight: 500;
+  }
+
+  .order-md-3 {
+    margin-top: 0px;
+  }
+
+  #current-education, #experience, #education, #projects {
+    text-align: center;
+
+  }
+
+  .heading {
+    margin-top: 40px;
+  }
+
+  .footer-icon {
+    font-size: 0.7rem;
+  }
+
+  .location {
+    font-size: 0.5rem;
+  }
+
+  .location .footer-icon {
+    font-size: 0.5rem;
+  }
+
 
 }
